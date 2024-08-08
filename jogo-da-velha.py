@@ -89,9 +89,9 @@ class ticTacToe:
                 if self.board[i][j] == " ":
                     list_moves.append((i, j))
 
-            if len(list_moves) > 0:
-                x, y = random.choice(list_moves)
-                self.board[x][y] = "O"
+        if len(list_moves) > 0:
+            x, y = random.choice(list_moves)
+            self.board[x][y] = "O"
     
 tic_tac_toe = ticTacToe()
 tic_tac_toe.print_board()
